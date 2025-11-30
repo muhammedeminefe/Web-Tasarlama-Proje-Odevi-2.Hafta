@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>SportLab - Spor Bülteni</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+
+        
+        header {
+            text-align: center;
+            background-color: #2c3e50; 
+            color: white;
+            padding: 20px 0;
+            border-bottom: 5px solid #e74c3c; 
+        }
+
+        header img {
+            border-radius: 50%; 
+            background-color: white;
+            padding: 5px;
+        }
+
+        h1#Baslik {
+            font-size: 2.5em;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        
+        .nav-menu {
+            margin-top: 15px;
+            background-color: #34495e;
+            padding: 10px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block; 
+            transition: background 0.3s;
+        }
+
+        .nav-menu a:hover {
+            background-color: #e74c3c; 
+        }
+
+        
+        h3 {
+            color: #e74c3c;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        table caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        table thead tr {
+            background-color: #e74c3c;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        table th, table td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3; 
+        }
+
+        table tbody tr:last-of-type {
+            border-bottom: 2px solid #e74c3c;
+        }
+        
+        table tbody tr:hover {
+            background-color: #ffe6e6; 
+            cursor: pointer;
+        }
+
+        
+        mark {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        
+        .content-link {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content-link:hover {
+            text-decoration: underline;
+        }
+
+        
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            font-size: 0.9em;
+        }
+        
+        footer a {
+            color: #ecf0f1;
+        }
+
+        
+        .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .btn:hover {
+            background-color: #c0392b;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <img src="logo.png" alt="SPORTLAB LOGO" width="100" height="100">
+        <h1 id="Baslik">Spor Bülteni</h1>
+        
+        <div class="nav-menu">
+			<a href="futbolY.html">Futbol</a>
+
+			<a href="basketbolS.html">Basketbol</a>
+
+			<a href="Volrybol.html">Voleybol</a>
+
+			<a href="hakkımızdaS.html">Hakkımızda</a>
+
+			<a href="Gizlilik.html">Gizlilik Politikası</a>
+        </div>
+    </header>
+
+    <h3><i>FUTBOL GÜNDEMİ</i></h3>
+    
+    <p><b>4 BÜYÜKLER BU HAFTA KARŞI KARŞIYA!</b></p>
+    <p><mark>Galatasaray - Trabzonspor</mark></p>
+    <p><mark>Beşiktaş - Fenerbahçe</mark></p>
+    
+    <hr> <p>Derbi maçlarındaki kazanan oylamasına katılmak için:</p>
+    <a href="https://forms.gle/rXHDFiJnuAz7eJUF9" target="_blank" class="btn">OYLAMA YAP</a>
+
+    <p>11. Hafta fikstürüne gitmek için:</p>
+    <a href="https://www.mackolik.com/puan-durumu/türkiye-süper-lig/fikstur/482ofyysbdbeoxauk19yg7tdt" target="_blank" class="btn">FİKSTÜRÜ GÖR</a>
+
+    <br><br>
+
+    <table>
+        <caption>Türkiye Süper Ligi Puan Durumu (İlk 10)</caption>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Takım</th>
+                <th>Maç</th>
+                <th>G</th>
+                <th>M</th>
+                <th>B</th>
+                <th>Av.</th>
+                <th>Puan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td> <td>Galatasaray</td> <td>10</td> <td>9</td> <td>0</td> <td>1</td> <td>+20</td> <td>28</td>
+            </tr>
+            <tr>
+                <td>2</td> <td>Trabzonspor</td> <td>10</td> <td>7</td> <td>2</td> <td>1</td> <td>+10</td> <td>23</td>
+            </tr>
+            <tr>
+                <td>3</td> <td>Fenerbahçe</td> <td>10</td> <td>6</td> <td>0</td> <td>4</td> <td>+12</td> <td>22</td>
+            </tr>
+            <tr>
+                <td>4</td> <td>Beşiktaş</td> <td>10</td> <td>5</td> <td>3</td> <td>2</td> <td>+4</td> <td>17</td>
+            </tr>
+            <tr>
+                <td>5</td> <td>Samsunspor</td> <td>10</td> <td>4</td> <td>1</td> <td>5</td> <td>+4</td> <td>17</td>
+            </tr>
+            <tr>
+                <td>6</td> <td>Gaziantep FK</td> <td>10</td> <td>5</td> <td>2</td> <td>3</td> <td>-3</td> <td>17</td>
+            </tr>
+            <tr>
+                <td>7</td> <td>Göztepe</td> <td>10</td> <td>4</td> <td>2</td> <td>4</td> <td>+6</td> <td>16</td>
+            </tr>
+            <tr>
+                <td>8</td> <td>Konyaspor</td> <td>10</td> <td>4</td> <td>4</td> <td>2</td> <td>+2</td> <td>14</td>
+            </tr>
+            <tr>
+                <td>9</td> <td>İst. Başakşehir</td> <td>10</td> <td>3</td> <td>4</td> <td>4</td> <td>+3</td> <td>13</td>
+            </tr>
+            <tr>
+                <td>10</td> <td>Alanyaspor</td> <td>10</td> <td>3</td> <td>3</td> <td>4</td> <td>0</td> <td>13</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Puan tablosunun tamamı için <a href="https://www.mackolik.com/puan-durumu/türkiye-trendyol-süper-lig/482ofyysbdbeoxauk19yg7tdt" target="_blank" class="content-link">Buraya Tıklayınız</a></p>
+    
+    <p>Türkiye Süper Ligi özetleri için <a href="https://beinsports.com.tr/mac-ozetleri-goller/super-lig" target="_blank" class="content-link">Maç Özetleri</a></p>
+    
+    <p>Milli Takım tarihi ve başarıları için <a href="https://www.eaglemedia.com.tr/spor/turkiye-mill-futbol-takimi-tarihi-ve-basarilari-ay-yildizlilarin-asirlik-yolculugu/1271" target="_blank" class="content-link">Tıklayınız</a></p>
+
+    <footer>
+        <img src="logo.png" alt="SPORTLAB" width="50" height="50">
+        <p>2025 &copy; SPORTLAB - Tüm Hakları Saklıdır.</p>
+        <p><a href="#Baslik">Yukarı Çık</a></p>
+    </footer>
+
+</div>
+
+</body>
+</html>
