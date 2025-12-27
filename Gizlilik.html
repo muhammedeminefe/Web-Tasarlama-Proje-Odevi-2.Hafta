@@ -15,7 +15,8 @@
         }
 
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
             background-color: white;
             padding: 20px;
@@ -48,16 +49,18 @@
             margin-top: 15px;
             background-color: #34495e;
             padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .nav-menu a {
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            margin: 0 5px;
             border-radius: 4px;
             font-weight: bold;
-            display: inline-block;
             transition: background 0.3s;
         }
 
@@ -100,44 +103,53 @@
             color: #ecf0f1;
             text-decoration: none;
         }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+            }
+            .nav-menu a {
+                display: block;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <header>
-        <img src="logo.png" alt="SPORTLAB LOGO" width="100" height="100">
-        <h1 id="Baslik">SPORTLAB</h1>
-        
-        <div class="nav-menu">
-            <a href="index1.html">Ana Sayfa</a>
+        <header>
+            <img src="logo.png" alt="SPORTLAB LOGO" width="100" height="100">
+            <h1 id="Baslik">SPORTLAB</h1>
+            
+            <div class="nav-menu">
+                <a href="index1.html">Ana Sayfa</a>
+				<a href="Volrybol.html">Voleybol</a>
+                <a href="futbolY.html">Futbol</a>
+                <a href="basketbolS.html">Basketbol</a>
+                <a href="hakkımızdaS.html">Hakkımızda</a>
+                <a href="Gizlilik.html">Gizlilik Politikası</a>
+            </div>
+        </header>
 
-			<a href="futbolY.html">Futbol</a>
+        <section>
+            <h2>GİZLİLİK POLİTİKASI HK.</h2>
 
-			<a href="basketbolS.html">Basketbol</a>
+            <p>Sportlab.com web sitemizde yer almakta olan istatistiki bilgiler, sayısal veriler ve sitede yer alan tahminler sadece bilgilendirmeye yönelik olup, bu verilerin kesinliğine dair herhangi bir iddia ve sorumluluğumuz <mark>bulunmamaktadır.</mark></p>
 
-			<a href="Volrybol.html">Voleybol</a>
+            <p>Ayrıca, köşe yazılarında, blog ve yorumlarda yer alan görüşler ve yazıların her türlü içeriği yazarların ve yorumcuların şahsi görüşlerini aktarmakta olup, ilgili yazı ve yorumlar hiç bir biçimde fotosopor.com’un görüşlerini yansıtmamaktadır.</p>
 
-			<a href="hakkımızdaS.html">Hakkımızda</a>
-        </div>
-    </header>
+            <p>Sitemizde yer alan bilgilerin ve yorumların, sayısal açıklamaların sitemiz tarafından kesinlikleri, doğrulukları garanti edilmemekte olup, bu yazı, yorum, haber ve bilgilere dayanılarak yapılacak herhangi bir işlem ve girişimde, bu bilgi, haber, yazı ve yorumların hatalı ya da eksik olmasından veya bunlarla ilgili herhangi bir başka durumdan kaynaklanan sebeplerle doğacak her türlü maddi ve manevi zararlardan, hukuki ve cezai her türlü sonuçtan, kişilerin ve kurumların kendilerinin ya da 3.kişilerin uğrayacağı her türlü zarardan sportlab.com sitesi ve bu site yöneticileri sorumlu tutulamaz.</p>
+        </section>
 
-    <h2>GİZLİLİK POLİTİKASI HK.</h2>
+        <footer>
+            <img src="logo.png" alt="SPORTLAB" width="50" height="50">
+            <p>2025 &copy; SPORTLAB - Tüm Hakları Saklıdır.</p>
+            <p><a href="#Baslik">Yukarı Çık</a></p>
+        </footer>
 
-    <p>Sportlab.com web sitemizde yer almakta olan istatistiki bilgiler, sayısal veriler ve sitede yer alan tahminler sadece bilgilendirmeye yönelik olup, bu verilerin kesinliğine dair herhangi bir iddia ve sorumluluğumuz <mark>bulunmamaktadır.</mark></p>
-
-    <p>Ayrıca, köşe yazılarında, blog ve yorumlarda yer alan görüşler ve yazıların her türlü içeriği yazarların ve yorumcuların şahsi görüşlerini aktarmakta olup, ilgili yazı ve yorumlar hiç bir biçimde fotosopor.com’un görüşlerini yansıtmamaktadır.</p>
-
-    <p>Sitemizde yer alan bilgilerin ve yorumların, sayısal açıklamaların sitemiz tarafından kesinlikleri, doğrulukları garanti edilmemekte olup, bu yazı, yorum, haber ve bilgilere dayanılarak yapılacak herhangi bir işlem ve girişimde, bu bilgi, haber, yazı ve yorumların hatalı ya da eksik olmasından veya bunlarla ilgili herhangi bir başka durumdan kaynaklanan sebeplerle doğacak her türlü maddi ve manevi zararlardan, hukuki ve cezai her türlü sonuçtan, kişilerin ve kurumların kendilerinin ya da 3.kişilerin uğrayacağı her türlü zarardan sportlab.com sitesi ve bu site yöneticileri sorumlu tutulamaz.</p>
-
-    <footer>
-        <img src="logo.png" alt="SPORTLAB" width="50" height="50">
-        <p>2025 &copy; SPORTLAB - Tüm Hakları Saklıdır.</p>
-        <p><a href="#Baslik">Yukarı Çık</a></p>
-    </footer>
-
-</div>
+    </div>
 
 </body>
 </html>

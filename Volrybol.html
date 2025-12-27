@@ -15,7 +15,8 @@
         }
 
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
             background-color: white;
             padding: 20px;
@@ -48,16 +49,18 @@
             margin-top: 15px;
             background-color: #34495e;
             padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .nav-menu a {
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            margin: 0 5px;
             border-radius: 4px;
             font-weight: bold;
-            display: inline-block;
             transition: background 0.3s;
         }
 
@@ -72,12 +75,17 @@
             text-transform: uppercase;
         }
 
+        .table-responsive {
+            overflow-x: auto;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
             font-size: 0.9em;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            min-width: 600px;
         }
 
         table caption {
@@ -143,82 +151,93 @@
         footer a {
             color: #ecf0f1;
         }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+            }
+            .nav-menu a {
+                display: block;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <header>
-        <img src="logo.png" alt="SPORTLAB LOGO" width="100" height="100">
-        <h1 id="Baslik">Spor Bülteni</h1>
-        
-        <div class="nav-menu">
-            <a href="index1.html">Ana Sayfa</a>
+        <header>
+            <img src="logo.png" alt="SPORTLAB LOGO" width="100" height="100">
+            <h1 id="Baslik">Spor Bülteni</h1>
+            
+            <div class="nav-menu">
+				<a href="index1.html">Ana Sayfa</a>
+				<a href="Volrybol.html">Voleybol</a>
+                <a href="futbolY.html">Futbol</a>
+                <a href="basketbolS.html">Basketbol</a>
+                <a href="hakkımızdaS.html">Hakkımızda</a>
+                <a href="Gizlilik.html">Gizlilik Politikası</a>
+            </div>
+        </header>
 
-			<a href="futbolY.html">Futbol</a>
+        <section>
+            <h3><i>VOLEYBOL DÜNYASI</i></h3>
 
-			<a href="basketbolS.html">Basketbol</a>
+            <p>Sultanlar Ligi fikstürüne gitmek için:</p>
+            <a href="https://www.flashscore.com.tr/voleybol/turkiye/sultanlar-ligi/fikstur" target="_blank" class="btn">FİKSTÜRÜ GÖR</a>
 
-			<a href="hakkımızdaS.html">Hakkımızda</a>
+            <br><br>
 
-			<a href="Gizlilik.html">Gizlilik Politikası</a>
-        </div>
-    </header>
+            <div class="table-responsive">
+                <table>
+                    <caption>Türkiye Sultanlar Ligi Puan Durumu (İlk 5)</caption>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Takım</th>
+                            <th>Maç</th>
+                            <th>G</th>
+                            <th>M</th>
+                            <th>Setler (K-K)</th>
+                            <th>Puan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td> <td>Fenerbahçe K</td> <td>4</td> <td>4</td> <td>0</td> <td>11-1</td> <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>2</td> <td>Vakıfbank K</td> <td>4</td> <td>4</td> <td>0</td> <td>12-2</td> <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>3</td> <td>Eczacıbaşı K</td> <td>4</td> <td>3</td> <td>1</td> <td>10-3</td> <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>4</td> <td>Galatasaray K</td> <td>4</td> <td>3</td> <td>1</td> <td>9-3</td> <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>5</td> <td>Aras Kargo K</td> <td>4</td> <td>2</td> <td>2</td> <td>9-7</td> <td>7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-    <h3><i>VOLEYBOL DÜNYASI</i></h3>
+            <p>Sultanlar Ligi tam puan tablosu için <a href="https://www.flashscore.com.tr/voleybol/turkiye/sultanlar-ligi/puan-durumu/#/2Hab6Xrf/puan-durumu/genel" target="_blank" class="content-link">Buraya Tıklayınız</a></p>
 
-    <p>Sultanlar Ligi fikstürüne gitmek için:</p>
-    <a href="https://www.flashscore.com.tr/voleybol/turkiye/sultanlar-ligi/fikstur" target="_blank" class="btn">FİKSTÜRÜ GÖR</a>
+            <hr>
 
-    <br><br>
+            <p>Filenin Sultanları hakkında detaylı bilgi için:</p>
+            <a href="https://www.tiklagelsin.com/blog/article/filenin-sultanlari" target="_blank" class="btn">FİLENİN SULTANLARI</a>
+        </section>
 
-    <table>
-        <caption>Türkiye Sultanlar Ligi Puan Durumu (İlk 5)</caption>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Takım</th>
-                <th>Maç</th>
-                <th>G</th>
-                <th>M</th>
-                <th>Setler (K-K)</th>
-                <th>Puan</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td> <td>Fenerbahçe K</td> <td>4</td> <td>4</td> <td>0</td> <td>11-1</td> <td>12</td>
-            </tr>
-            <tr>
-                <td>2</td> <td>Vakıfbank K</td> <td>4</td> <td>4</td> <td>0</td> <td>12-2</td> <td>12</td>
-            </tr>
-            <tr>
-                <td>3</td> <td>Eczacıbaşı K</td> <td>4</td> <td>3</td> <td>1</td> <td>10-3</td> <td>9</td>
-            </tr>
-            <tr>
-                <td>4</td> <td>Galatasaray K</td> <td>4</td> <td>3</td> <td>1</td> <td>9-3</td> <td>9</td>
-            </tr>
-            <tr>
-                <td>5</td> <td>Aras Kargo K</td> <td>4</td> <td>2</td> <td>2</td> <td>9-7</td> <td>7</td>
-            </tr>
-        </tbody>
-    </table>
+        <footer>
+            <img src="logo.png" alt="SPORTLAB" width="50" height="50">
+            <p>2025 &copy; SPORTLAB - Tüm Hakları Saklıdır.</p>
+            <p><a href="#Baslik">Yukarı Çık</a></p>
+        </footer>
 
-    <p>Sultanlar Ligi tam puan tablosu için <a href="https://www.flashscore.com.tr/voleybol/turkiye/sultanlar-ligi/puan-durumu/#/2Hab6Xrf/puan-durumu/genel" target="_blank" class="content-link">Buraya Tıklayınız</a></p>
-
-    <hr>
-
-    <p>Filenin Sultanları hakkında detaylı bilgi için:</p>
-    <a href="https://www.tiklagelsin.com/blog/article/filenin-sultanlari" target="_blank" class="btn">FİLENİN SULTANLARI</a>
-
-    <footer>
-        <img src="logo.png" alt="SPORTLAB" width="50" height="50">
-        <p>2025 &copy; SPORTLAB - Tüm Hakları Saklıdır.</p>
-        <p><a href="#Baslik">Yukarı Çık</a></p>
-    </footer>
-
-</div>
+    </div>
 
 </body>
 </html>

@@ -15,7 +15,8 @@
         }
 
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
             background-color: white;
             padding: 20px;
@@ -48,16 +49,18 @@
             margin-top: 15px;
             background-color: #34495e;
             padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .nav-menu a {
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            margin: 0 5px;
             border-radius: 4px;
             font-weight: bold;
-            display: inline-block;
             transition: background 0.3s;
         }
 
@@ -72,12 +75,17 @@
             text-transform: uppercase;
         }
 
+        .table-responsive {
+            overflow-x: auto;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
             font-size: 0.9em;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            min-width: 600px;
         }
 
         table caption {
@@ -150,106 +158,117 @@
         footer a {
             color: #ecf0f1;
         }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+            }
+            .nav-menu a {
+                display: block;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <header>
-        <img src="logo.png" alt="SPORTLAB LOGO" width="100" height="100">
-        <h1 id="Baslik">Spor Bülteni</h1>
-        
-        <div class="nav-menu">
-            <a href="index1.html">Ana Sayfa</a>
+        <header>
+            <img src="logo.png" alt="SPORTLAB LOGO" width="100" height="100">
+            <h1 id="Baslik">Spor Bülteni</h1>
+            
+            <nav class="nav-menu">
+                <a href="index1.html">Ana Sayfa</a>
+				<a href="Volrybol.html">Voleybol</a>
+                <a href="futbolY.html">Futbol</a>
+                <a href="basketbolS.html">Basketbol</a>
+                <a href="hakkımızdaS.html">Hakkımızda</a>
+                <a href="Gizlilik.html">Gizlilik Politikası</a>		
+            </nav>
+        </header>
 
-			<a href="basketbolS.html">Basketbol</a>
+        <section>
+            <h3><i>FUTBOL GÜNDEMİ</i></h3>
 
-			<a href="Volrybol.html">Voleybol</a>
+            <p><b>4 BÜYÜKLER BU HAFTA KARŞI KARŞIYA!</b></p>
+            <p><mark>Galatasaray - Trabzonspor</mark></p>
+            <p><mark>Beşiktaş - Fenerbahçe</mark></p>
+            
+            <hr>
 
-			<a href="hakkımızdaS.html">Hakkımızda</a>
+            <p>Derbi maçlarındaki kazanan oylamasına katılmak için:</p>
+            <a href="https://forms.gle/rXHDFiJnuAz7eJUF9" target="_blank" class="btn">OYLAMA YAP</a>
 
-			<a href="Gizlilik.html">Gizlilik Politikası</a>
-        </div>
-    </header>
+            <p>11. Hafta fikstürüne gitmek için:</p>
+            <a href="https://www.mackolik.com/puan-durumu/türkiye-süper-lig/fikstur/482ofyysbdbeoxauk19yg7tdt" target="_blank" class="btn">FİKSTÜRÜ GÖR</a>
 
-    <h3><i>FUTBOL GÜNDEMİ</i></h3>
+            <br><br>
 
-    <p><b>4 BÜYÜKLER BU HAFTA KARŞI KARŞIYA!</b></p>
-    <p><mark>Galatasaray - Trabzonspor</mark></p>
-    <p><mark>Beşiktaş - Fenerbahçe</mark></p>
-    
-    <hr>
+            <div class="table-responsive">
+                <table>
+                    <caption>Türkiye Süper Ligi Puan Durumu (İlk 10)</caption>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Takım</th>
+                            <th>Maç</th>
+                            <th>G</th>
+                            <th>M</th>
+                            <th>B</th>
+                            <th>Goller</th>
+                            <th>Puan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td> <td>Galatasaray</td> <td>10</td> <td>9</td> <td>0</td> <td>1</td> <td>25-5</td> <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>2</td> <td>Trabzonspor</td> <td>10</td> <td>7</td> <td>2</td> <td>1</td> <td>17-7</td> <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>3</td> <td>Fenerbahçe</td> <td>10</td> <td>6</td> <td>0</td> <td>4</td> <td>18-6</td> <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>4</td> <td>Beşiktaş</td> <td>10</td> <td>5</td> <td>3</td> <td>2</td> <td>16-12</td> <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>5</td> <td>Samsunspor</td> <td>10</td> <td>4</td> <td>1</td> <td>5</td> <td>14-10</td> <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>6</td> <td>Gaziantep FK</td> <td>10</td> <td>5</td> <td>2</td> <td>3</td> <td>15-18</td> <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>7</td> <td>Göztepe</td> <td>10</td> <td>4</td> <td>2</td> <td>4</td> <td>12-6</td> <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>8</td> <td>Konyaspor</td> <td>10</td> <td>4</td> <td>4</td> <td>2</td> <td>17-15</td> <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>9</td> <td>İst. Başakşehir</td> <td>10</td> <td>3</td> <td>4</td> <td>4</td> <td>12-9</td> <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>10</td> <td>Alanyaspor</td> <td>10</td> <td>3</td> <td>3</td> <td>4</td> <td>11-11</td> <td>13</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-    <p>Derbi maçlarındaki kazanan oylamasına katılmak için:</p>
-    <a href="https://forms.gle/rXHDFiJnuAz7eJUF9" target="_blank" class="btn">OYLAMA YAP</a>
+            <p>Puan tablosunun tamamı için <a href="https://www.mackolik.com/puan-durumu/türkiye-trendyol-süper-lig/482ofyysbdbeoxauk19yg7tdt" target="_blank" class="content-link">Buraya Tıklayınız</a></p>
+            
+            <p>Türkiye Süper Ligi özetleri için <a href="https://beinsports.com.tr/mac-ozetleri-goller/super-lig" target="_blank" class="content-link">Maç Özetleri</a></p>
+            
+            <p>Milli Takım tarihi ve başarıları için <a href="https://www.eaglemedia.com.tr/spor/turkiye-mill-futbol-takimi-tarihi-ve-basarilari-ay-yildizlilarin-asirlik-yolculugu/1271" target="_blank" class="content-link">Tıklayınız</a></p>
+        </section>
 
-    <p>11. Hafta fikstürüne gitmek için:</p>
-    <a href="https://www.mackolik.com/puan-durumu/türkiye-süper-lig/fikstur/482ofyysbdbeoxauk19yg7tdt" target="_blank" class="btn">FİKSTÜRÜ GÖR</a>
+        <footer>
+            <img src="logo.png" alt="SPORTLAB" width="50" height="50">
+            <p>2025 &copy; SPORTLAB - Tüm Hakları Saklıdır.</p>
+            <p><a href="#Baslik">Yukarı Çık</a></p>
+        </footer>
 
-    <br><br>
-
-    <table>
-        <caption>Türkiye Süper Ligi Puan Durumu (İlk 10)</caption>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Takım</th>
-                <th>Maç</th>
-                <th>G</th>
-                <th>M</th>
-                <th>B</th>
-                <th>Goller</th>
-                <th>Puan</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td> <td>Galatasaray</td> <td>10</td> <td>9</td> <td>0</td> <td>1</td> <td>25-5</td> <td>28</td>
-            </tr>
-            <tr>
-                <td>2</td> <td>Trabzonspor</td> <td>10</td> <td>7</td> <td>2</td> <td>1</td> <td>17-7</td> <td>23</td>
-            </tr>
-            <tr>
-                <td>3</td> <td>Fenerbahçe</td> <td>10</td> <td>6</td> <td>0</td> <td>4</td> <td>18-6</td> <td>22</td>
-            </tr>
-            <tr>
-                <td>4</td> <td>Beşiktaş</td> <td>10</td> <td>5</td> <td>3</td> <td>2</td> <td>16-12</td> <td>17</td>
-            </tr>
-            <tr>
-                <td>5</td> <td>Samsunspor</td> <td>10</td> <td>4</td> <td>1</td> <td>5</td> <td>14-10</td> <td>17</td>
-            </tr>
-            <tr>
-                <td>6</td> <td>Gaziantep FK</td> <td>10</td> <td>5</td> <td>2</td> <td>3</td> <td>15-18</td> <td>17</td>
-            </tr>
-            <tr>
-                <td>7</td> <td>Göztepe</td> <td>10</td> <td>4</td> <td>2</td> <td>4</td> <td>12-6</td> <td>16</td>
-            </tr>
-            <tr>
-                <td>8</td> <td>Konyaspor</td> <td>10</td> <td>4</td> <td>4</td> <td>2</td> <td>17-15</td> <td>14</td>
-            </tr>
-            <tr>
-                <td>9</td> <td>İst. Başakşehir</td> <td>10</td> <td>3</td> <td>4</td> <td>4</td> <td>12-9</td> <td>13</td>
-            </tr>
-            <tr>
-                <td>10</td> <td>Alanyaspor</td> <td>10</td> <td>3</td> <td>3</td> <td>4</td> <td>11-11</td> <td>13</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <p>Puan tablosunun tamamı için <a href="https://www.mackolik.com/puan-durumu/türkiye-trendyol-süper-lig/482ofyysbdbeoxauk19yg7tdt" target="_blank" class="content-link">Buraya Tıklayınız</a></p>
-    
-    <p>Türkiye Süper Ligi özetleri için <a href="https://beinsports.com.tr/mac-ozetleri-goller/super-lig" target="_blank" class="content-link">Maç Özetleri</a></p>
-    
-    <p>Milli Takım tarihi ve başarıları için <a href="https://www.eaglemedia.com.tr/spor/turkiye-mill-futbol-takimi-tarihi-ve-basarilari-ay-yildizlilarin-asirlik-yolculugu/1271" target="_blank" class="content-link">Tıklayınız</a></p>
-
-    <footer>
-        <img src="logo.png" alt="SPORTLAB" width="50" height="50">
-        <p>2025 &copy; SPORTLAB - Tüm Hakları Saklıdır.</p>
-        <p><a href="#Baslik">Yukarı Çık</a></p>
-    </footer>
-
-</div>
+    </div>
 
 </body>
 </html>
